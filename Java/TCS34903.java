@@ -1,7 +1,7 @@
 // Distributed with a free-will license.
 // Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
 // TCS34903
-// This code is designed to work with the TCS34903_IS2C I2C Mini Module available from ControlEverything.com.
+// This code is designed to work with the TCS34903_I2CS I2C Mini Module available from ControlEverything.com.
 // https://www.controleverything.com/content/Color?sku=TCS34903FN_I2CS#tabs-0-product_tabset-2
 
 import com.pi4j.io.i2c.I2CBus;
