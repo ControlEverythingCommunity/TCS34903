@@ -3,6 +3,7 @@
 TCS34903 Color Light-to-Digital Converter  
 
 The TCS34903 provides color and IR (red, green, blue, clear and IR) light sensing using I²C communications.
+
 This Device is available from ControlEverything.com [SKU: TCS34903FN_I2CS]
 
 https://www.controleverything.com/content/Color?sku=TCS34903FN_I2CS
