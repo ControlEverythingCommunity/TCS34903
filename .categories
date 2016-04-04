@@ -1,3 +1,5 @@
 lang:java
 lang:python
+lang:arduino
+lang:particle
 sku:TCS34903FN_I2CS
