@@ -60,5 +60,18 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
  
 https://dashboard.particle.io/user/logs
 
+
+## C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc TCS34903.c -o TCS34903
+```
+Run the c program.
+```cpp
+$>./TCS34903
+```
 #####The code output is the lux value of IR , RGB  and total luminance.
 
