@@ -44,6 +44,7 @@ void main()
 	config[0] = 0x80;
 	config[1] = 0x0B;
 	write(file, config, 2);
+	sleep(1);
 
 	// Read 8 bytes of data from register(0x94)
 	// ir lsb, ir msb, red lsb, red msb, green lsb, green msb, blue lsb, blue msb
