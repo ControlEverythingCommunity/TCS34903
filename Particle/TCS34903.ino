@@ -11,7 +11,7 @@
 #define Addr 0x39
 
 int ir = 0, red = 0, green = 0, blue = 0;
-float luminance = 0;
+double luminance = 0;
 void setup()
 {
   // Set variable
