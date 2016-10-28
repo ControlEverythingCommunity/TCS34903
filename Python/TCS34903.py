@@ -20,9 +20,9 @@ bus.write_byte_data(0x39, 0x80, 0x03)
 #		0x00(00)	ATIME : 712ms, 256 cycles
 bus.write_byte_data(0x39, 0x81, 0x00)
 # TCS34903 address, 0x39(57)
-# Select Wait time register, 0x82(130)
+# Select Wait time register, 0x83(131)
 #		0xFF(255)	WTIME : 2.78ms
-bus.write_byte_data(0x39, 0x82, 0xFF)
+bus.write_byte_data(0x39, 0x83, 0xFF)
 # TCS34903 address, 0x39(57)
 # Select RGBC gain control, 0x8F(143)
 #		0x00(00)	AGAIN is 1x
