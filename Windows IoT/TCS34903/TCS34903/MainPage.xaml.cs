@@ -60,11 +60,11 @@ namespace TCS34903
             I2CColor = await I2cDevice.FromIdAsync(dis[0].Id, settings);    // Create an I2C Device with our selected bus controller and I2C settings
             if (I2CColor == null)
             {
-                Text_Status.Text = string.Format(
+		Text_Status.Text = string.Format(
                     "Slave address {0} on I2C Controller {1} is currently in use by " +
                     "another application. Please ensure that no other applications are using I2C.",
-                    settings.SlaveAddress,
-                    dis[0].Id);
+		settings.SlaveAddress,
+		dis[0].Id);
                 return;
             }
 
@@ -86,8 +86,8 @@ namespace TCS34903
                 I2CColor.Write(WriteBuf_Enable);
                 I2CColor.Write(WriteBuf_Atime);
                 I2CColor.Write(WriteBuf_Wtime);
-				I2CColor.Write(WriteBuf_Control);
-				I2CColor.Write(WriteBuf_IR);
+		I2CColor.Write(WriteBuf_Control);
+		I2CColor.Write(WriteBuf_IR);
             }
             // If the write fails display the error and stop running
             catch (Exception ex)
