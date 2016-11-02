@@ -13,23 +13,23 @@ namespace TCS34903
         public double IR;
         public double R;
         public double G;
-		public double B;
-		public double L;
+	public double B;
+	public double L;
     };
 
     //	App that reads data over I2C from an TCS34903 Color Light-to-Digital Converter
     public sealed partial class MainPage : Page
     {
-	private const byte COLOR_I2C_ADDR = 0x39;		// I2C address of the TCS34903
-        private const byte COLOR_REG_ENABLE = 0x80;  		// Enables state and interrupt register
-        private const byte COLOR_REG_ATIME = 0x81;    		// RGBC integration time register
-	private const byte COLOR_REG_WTIME = 0x83;    		// Wait time register
-	private const byte COLOR_REG_CONTROL = 0x8F;    	// RGBC Gain control register
-	private const byte COLOR_REG_IR = 0xC0;    		// Access IR Channel register
-        private const byte COLOR_REG_CDATA = 0x94;              // Clear / IR channel low data register register
-        private const byte COLOR_REG_RDATA = 0x96;              // Red ADC low data register register
-        private const byte COLOR_REG_GDATA = 0x98;              // Green ADC low data register register
-	private const byte COLOR_REG_BDATA = 0x9A;              // Blue ADC low data register register
+	private const byte COLOR_I2C_ADDR = 0x39;	// I2C address of the TCS34903
+        private const byte COLOR_REG_ENABLE = 0x80;  	// Enables state and interrupt register
+        private const byte COLOR_REG_ATIME = 0x81;    	// RGBC integration time register
+	private const byte COLOR_REG_WTIME = 0x83;    	// Wait time register
+	private const byte COLOR_REG_CONTROL = 0x8F;    // RGBC Gain control register
+	private const byte COLOR_REG_IR = 0xC0;    	// Access IR Channel register
+        private const byte COLOR_REG_CDATA = 0x94;      // Clear / IR channel low data register register
+        private const byte COLOR_REG_RDATA = 0x96;	// Red ADC low data register register
+        private const byte COLOR_REG_GDATA = 0x98;	// Green ADC low data register register
+	private const byte COLOR_REG_BDATA = 0x9A;	// Blue ADC low data register register
 
         private I2cDevice I2CColor;
         private Timer periodicTimer;
