@@ -116,11 +116,11 @@ namespace TCS34903
             {
                 Color color = ReadI2CColor();
                 addressText = "I2C Address of the Color Light-to-Digital Converter TCS34903: 0x39";
-                irText = String.Format("InfraRed Luminance: {0:F0}", color.IR);
-                rText = String.Format("Red Color Luminance: {0:F0}", color.R);
-                gText = String.Format("Green Color Luminance: {0:F0}", color.G);
-		bText = String.Format("Blue Color Luminance: {0:F0}", color.B);
-                lText = String.Format("Ambient Light Luminance: {0:F2}", color.L);
+                irText = String.Format("InfraRed Luminance: {0:F0} lux", color.IR);
+                rText = String.Format("Red Color Luminance: {0:F0} lux", color.R);
+                gText = String.Format("Green Color Luminance: {0:F0} lux", color.G);
+		bText = String.Format("Blue Color Luminance: {0:F0} lux", color.B);
+                lText = String.Format("Ambient Light Luminance: {0:F2} lux", color.L);
                 statusText = "Status: Running";
             }
             catch (Exception ex)
