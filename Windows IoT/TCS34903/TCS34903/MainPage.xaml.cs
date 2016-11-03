@@ -26,10 +26,10 @@ namespace TCS34903
 	private const byte COLOR_REG_WTIME = 0x83;    	// Wait time register
 	private const byte COLOR_REG_CONTROL = 0x8F;    // RGBC Gain control register
 	private const byte COLOR_REG_IR = 0xC0;    	// Access IR Channel register
-        private const byte COLOR_REG_CDATA = 0x94;      // Clear / IR channel low data register register
-        private const byte COLOR_REG_RDATA = 0x96;	// Red ADC low data register register
-        private const byte COLOR_REG_GDATA = 0x98;	// Green ADC low data register register
-	private const byte COLOR_REG_BDATA = 0x9A;	// Blue ADC low data register register
+        private const byte COLOR_REG_CDATA = 0x94;      // Clear / IR channel low data register
+        private const byte COLOR_REG_RDATA = 0x96;	// Red ADC low data register
+        private const byte COLOR_REG_GDATA = 0x98;	// Green ADC low data register
+	private const byte COLOR_REG_BDATA = 0x9A;	// Blue ADC low data register
 
         private I2cDevice I2CColor;
         private Timer periodicTimer;
